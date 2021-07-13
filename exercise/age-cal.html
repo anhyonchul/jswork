@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이 계산 프로그램</title>
+</head>
+<body>
+    <H1>나이 계산 프로그램</H1>
+    <SCript>
+        const currentYear = 2021; //const는 상수(변하지 않는것), var는 변수(변하는것)
+        var birthYear = prompt("태어난 년도를 입력해주세요", "1990");
+        var age;
+        //currentYear = 2020; 이렇게 고치면 오류남. 상수를 고쳤으므로...
+
+        age = (currentYear - birthYear + 1)
+        document.write("당신의 나이는 " + age + "세 입니다.")
+    </SCript>
+</body>
+</html>

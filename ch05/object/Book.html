@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 정의와 사용</title>
+</head>
+<body>
+    <script>
+       var book = {
+            title : "점프 투 파이썬",
+            author : "박응용",
+            pages : 356,
+            price : "18,800원",
+
+            info : function(){   //객체 자신은 this로 사용한다
+                alert(this.title + " 책의 분량은 " + this.pages + "쪽 입니다.")
+            }
+       };
+
+       book.info();
+       document.write("책의 저자는 " + book.author + " 입니다.");
+    </script>
+</body>
+</html>

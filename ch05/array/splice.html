@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체의 함수</title>
+</head>
+<body>
+    <h1>Splice (배열 특정 인덱스에 요소 추가, 삭제)</h1>
+    <script>
+        var 동물 = ["소", "돼지", "닭", "강아지"];
+
+        //삭제
+        동물.splice(0, 2); // 0번 인덱스부터, 2개 삭제하겠다.
+
+        document.write(동물);
+
+        document.write("<br>");
+        
+        //요소추가
+        동물.splice(1, 0, "말"); //1번 인덱스부터, 삭제없이, "말"을 추가한다
+        document.write(동물);
+        
+    </script>
+</body>
+</html>

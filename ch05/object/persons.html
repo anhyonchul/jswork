@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 정의와 사용</title>
+</head>
+<body>
+    <script>
+        var person = {
+            name : "추신수", 
+            age : 39,
+            
+            play : function(){
+                alert("홈런을 친다!!!")
+            }
+        } //key : value 쌍으로 이루어짐
+
+
+        document.write("이름 : " + person.name + "<br>");
+        document.write("나이 : " + person.age);
+        person.play();
+
+    </script>
+</body>
+</html>

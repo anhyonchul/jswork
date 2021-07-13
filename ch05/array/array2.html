@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 예제</title>
+</head>
+<body>
+    <h1>배열(array)의 생성과 사용</h1>
+    <script>
+        var fruits = ['사과', '딸기', '바나나'];
+
+        document.write("fruits[0] = " + fruits[0] + "<br>");
+
+        document.write("<br>")
+
+        //전체 조회
+        for(var i=0; i<fruits.length; i++){
+            document.write(fruits[i] + " ");
+        }
+
+        document.write("<br>")
+        document.write("<br>")
+
+        //딸기를 토마토로
+        fruits[1] = "토마토";
+
+        //전체 조회2 - for in 반복문
+        //for(var변수이름 in 배열이름)
+        for(var i in fruits){
+            document.write(fruits[i] + " ");
+        }
+    
+    </script>
+</body>
+</html>

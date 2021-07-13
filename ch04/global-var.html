@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수의 유효 범위</title>
+</head>
+<body>
+    <h2>전역변수의 유효 범위</h2>
+    <script>
+        var x = 1;  //전역 변수
+        function oneUp(){
+            x += 1;
+            return x;
+        }
+
+        var num = oneUp();  //x = 2
+        num = oneUp();  //x=3
+        document.write("num = " + num + '<br>');
+        document.write("x = " + x + '<br>');
+        //전역변수의 생존 기간은 함수를 정의할때 생성되고, 
+        //프로그램이 종료될때 메모리에서 소멸된다.
+    </script>
+</body>
+</html>

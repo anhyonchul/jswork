@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 최소값 구하기</title>
+</head>
+<body>
+    <h1>배열의 최소값 구하기</h1>
+    <script>
+        var nums = [15, 90, 22, 99, 51, 62];
+        
+        //최대값 변수 설정
+        var min = nums[0];
+
+        //비교연산
+        for(var i = 1; i < nums.length; i++){   
+            if(min > nums[i])    
+                min = nums[i];   
+        }
+        document.write("최소값 : " + min + "<br>")
+    </script>
+</body>
+</html>

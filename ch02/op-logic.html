@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리 연산자</title>
+</head>
+<body>
+    <h2>논리 연산자</h2>
+    <script>
+        var n1 = 10, n2 = 5;
+        var result;
+
+        result = (n1 >= n2) && (n1 === n2) //false
+        console.log(result);
+        // && - ~이고 : 논리곱 -> 모두 true일때 true
+
+        result = (n1 >= n2) || (n1 === n2) //true
+        console.log(result);
+        // || - ~이거나, 또는 : 논리합 -> 조건이 1개만 참이어도 참
+
+        result = !(n1 >= n2) //false
+        console.log(result);
+        // ! - 아니다 : 논리 부정 -> 조건이 참이면 거짓, 거짓이면 참
+
+    </script>
+</body>
+</html>

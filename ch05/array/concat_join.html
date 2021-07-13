@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체의 함수</title>
+</head>
+<body>
+    <h1>배열의 병합과 연결</h1>
+    <script>
+        var numbers = [1, 2, 3];
+        var chars = ["a", "b", "c"];
+
+        //두 배열 합치기(병합)
+
+        var list = numbers.concat(chars);
+        document.write(list + "<br>")
+
+        //연결하기
+        document.write(numbers.join() + "<br>")
+        document.write(numbers.join("-") + "<br>")
+        document.write(chars.join("~") + "<br>")
+        document.write(list.join("-") + "<br>")
+        
+    </script>
+</body>
+</html>

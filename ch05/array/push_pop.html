@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체의 함수</title>
+</head>
+<body>
+    <h1>Push와 Pop</h1>
+    <script>
+        var nums = [1, 2, 3];
+        nums[3] = 4;
+        nums.push(5, 6); //이것만 뒤에 추가
+
+        for(var i=0; i < nums.length; i++){
+            document.write(nums[i] + " " )
+        }
+
+        document.write("<br>")
+
+        //요소삭제
+        nums.pop(); //맨뒤에 하나 삭제
+        document.write(nums)
+    </script>
+</body>
+</html>

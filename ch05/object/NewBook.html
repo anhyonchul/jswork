@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 개체 만들기</title>
+    <style>
+        h1{
+            padding: 20px;
+        }
+
+        p{
+            width: 250px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        function Book(title, author, price){
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+        //book 객체의 인스턴스 만들기 (실행가능한 객체 만들기)
+        
+        var html = new Book("웹 표준의 정석", "고경희", 30000);
+        var python = new Book("점프 투 파이썬", "박응용", 18800);
+        var django = new Book("점프 투 장고", "박응용", 20000);
+
+        var booklist = [html, python, django];
+
+        //목록 조회
+        document.write("<h1>책 제목으로 살펴보기</h1>");
+        for(var i=0; i<booklist.length; i++){
+            document.write("<p>" + booklist[i].title + "</p>")    
+        }
+
+        document.write("<h1>책 저자로 살펴보기</h1>");
+        for(var i=0; i<booklist.length; i++){
+            document.write("<p>" + booklist[i].author + "</p>")    
+        }
+
+        document.write("<h1>책 가격으로 살펴보기</h1>");
+        for(var i=0; i<booklist.length; i++){
+            document.write("<p>" + booklist[i].price + "</p>")    
+        }
+        
+
+        // document.write(html.title);
+    </script>
+</body>
+</html>

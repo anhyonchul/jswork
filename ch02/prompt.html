@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 함수 prompt() 사용</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .accent{
+            font-size: 1.2em;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>어서 오세요</h1>
+    <script>
+        // var name = "Elsa";
+        var name = prompt("이름을 입력하세요", "Harry poter");
+
+        document.write("<span class='accent'>" + name + "</span>님, 환영합니다.");
+    </script>
+</body>
+</html>

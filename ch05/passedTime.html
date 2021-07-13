@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날자 계산 프로그램</title>
+    <style>
+        #container{
+            width: 350px;
+            height: 350px;
+            text-align: center;
+            background-color: rgb(45, 227, 84);
+            border: 1px solid black;
+            border-radius: 50%;
+            margin: 30px
+            
+        }
+        h1{
+            margin-top: 70px;
+            font-size: 3em;
+            color: cornsilk;
+        }
+
+        #result{
+            font-size: 2em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>책 읽기</h1>
+        <p><span id="result"></span>일 연속으로<br> 책 읽기를 달성하셨습니다.</p>
+        <p>축하합니다.</p>
+    <script>
+        //지나온잘자(passedTime) = 현재날자(today) - 독서를 시작한 날자("2021-05-27")
+        var today = new Date();
+        var FirstDay = new Date("2021-05-27");
+
+        var passedTime = today.getTime() - FirstDay.getTime();
+        passedTime = Math.round(passedTime/(24*60*60*1000));
+        //1907.1.1 자정 이후시간 - 밀리초로 계산됨.
+
+        document.getElementById("result").innerHTML = passedTime;
+    </script>
+    </div>
+</body>
+</html>

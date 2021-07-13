@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좋은글귀 랜덤 출력</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: rgb(163, 157, 194);
+            color: white;
+            margin-top: 5px;
+            text-align: center;
+            font-size: 2.5em;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>좋은 글귀 랜덤 출력</h1>
+    <script>
+        //좋은글귀
+
+        var words = [];
+
+        words[0] = "당신은 지금도 최고고, 예전에도 최고였으며 앞으로도 최고일 것이다"
+        words[1] = "성공하는 사람은 실패하는데 익숙한 사람이다"
+        words[2] = "후회를 최대한 이용하라. 깊이 후회한다는 것은 새로운 삶을 산다는 것이다"
+        words[3] = "가짜 친구는 소문을 믿고, 진짜 친구는 나를 믿는다."
+        words[4] = "성공이라는 못을 박으려면 끈질김이라는 망치가 필요하다."
+
+        // rand선언  소수점이하버럼 랜덤돌림   words배열의 끝까지
+        var rand = Math.floor(Math.random() * words.length);
+
+        document.write(words[rand]);
+    </script>
+</body>
+</html>

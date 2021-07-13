@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이중 for문</title>
+</head>
+<body>
+    <h2>이중 for문 연습</h2>
+    <script>
+        //1행에 5열까지 '가'를 출력하기
+        for(var i=1; i<=5; i++){
+            document.write("가");
+        }
+        document.write("<br><br>")
+
+        //5행 5열까지 '가'를 출력하기
+        var i, j;
+        for(i=1; i<=5; i++){
+            for(j=1; j<=5; j++){
+                document.write("가");
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>

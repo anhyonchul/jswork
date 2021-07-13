@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문(For문) 곱하기(Facto)연습하기</title>
+</head>
+<body>
+    <h1>팩토리알 계산하기</h1>
+    <script>
+        var n = prompt("숫자를 입력하세요","1");
+        var result = "";
+        var facto = 1;
+
+        if(n !== null){
+            for (var i=1 ; i <= n ; i++){
+                facto = facto * i
+            }
+            result = n + "i = " + facto
+            document.write(result);
+        }else{
+            document.write("입력값이 취소되었습니다.");
+        }
+        
+
+    </script>
+</body>
+</html>
